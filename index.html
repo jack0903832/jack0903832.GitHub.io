@@ -1,4 +1,4 @@
-<a href="https://china.nba.com/">点击我拿精彩好礼</a><br>
+/*<a href="https://china.nba.com/">点击我拿精彩好礼</a><br>
 <a href="http://www.yzu.edu.cn/col/col53764/index.html">扬州大学VPN</a>
 <style>
   
@@ -8,3 +8,53 @@
   
   }
   </style>
+*/
+
+<html>
+<head>
+<title>霓虹灯效果展示</title>
+<script>
+let str="王旭是我傻儿子";
+let sLen=str.length;
+let i=0;
+function neon(){
+
+    i++;
+    i=(i>=sLen)?0:i;
+    i=(i<0)?(sLen-1):i;
+    n.innerHTML=str.substring(0,i)+"<font color=red>"+str.substring(i,i+1)+"</font>"+
+    str.substring(i+1,sLen);
+}
+setInterval("neon()",300);
+</script>
+</head>
+<body>
+    <div id="n" style="font-size:50px;color:tan"></div>
+    <button>请点击我</button>
+    <style>
+        button
+        {
+          color:teal;
+
+        }
+        </style>
+    <script>
+
+    const btn=document.querySelector('button');
+    btn.addEventListener('click',show);
+    function show()
+    {
+
+//btn.textContent='哈哈哈哈';
+let name=prompt("你的名字是什么?");
+alert('hello'+name);
+btn.style.backgroundColor='red';
+
+    }
+
+</script>
+
+</body>
+        </html>>
+
+
